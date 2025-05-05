@@ -4,5 +4,4 @@ import edu.estatuas.payment.PaymentMethod;
 
 public interface GuestDispatcher {
     void dispatch(PaymentMethod card);
-
 }

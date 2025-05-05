@@ -1,10 +1,8 @@
 package edu.estatuas.payment;
 
-public class PaymentMethod {
-
+public interface PaymentMethod {
     boolean pay(double credit);
     String number();
     String cardOwner();
     double credit();
-
 }
