@@ -27,7 +27,10 @@ public class CreditCard {
         return this.credit;
     }
 
+    @Override
     public String toString(){
+        return "owner: " + cardOwner() +
+                "/nnumber: " + number() +
+                "/ncredit: " + credit() + 3000.0 + SYMBOL;
     }
-
 }
