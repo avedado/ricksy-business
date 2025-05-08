@@ -15,6 +15,9 @@ public class CristalExpender implements GuestDispatcher {
 
     @Override
     public void dispatch(PaymentMethod card) {
+        if (this.stock > 0 && card.pay(itemCost)) {
+            this.stock -= 1;
+        }
     }
 
     @Override
