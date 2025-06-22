@@ -27,7 +27,8 @@ public class RicksyBusiness
          * y realiza un cargo a la tarjeta.
          * Si hay saldo suficiente se reserva un UberOvni
          * de los que estén libres.
-         * El coste del ovni es de 500 EZIs.  ***
+         * El coste del ovni es de 500 EZIs.  
+         */
 
 
         UfosPark ufosPark = new UfosPark();
@@ -107,7 +108,8 @@ public class RicksyBusiness
         /**
          * Construye el dispensador de packs de bienvenida.
          * Indica el numero de unidades y el coste de cada
-         * uno de ellos, que es de 50 EZIs  ***
+         * uno de ellos, que es de 50 EZIs  
+         */
 
 
         CrystalExpender packExpender = new CrystalExpender(3, 50);
@@ -140,7 +142,8 @@ public class RicksyBusiness
          *
          * Para ello, crea el componente receptivo
          * y registra (añade) los componentes UfosPark
-         * y CrystalDispatcher al receptivo  ***
+         * y CrystalDispatcher al receptivo  
+         */
 
 
         Receptivo receptivo = Receptivo.getReceptivo();
@@ -195,7 +198,8 @@ public class RicksyBusiness
          * al ovni y al pack de bienvenida.
          * Hay 100 RickMenús y su precio es de 10 EZIs.
          * Muestra el total de pedidos y la lista de
-         * invitados/as (numero de tarjeta) que han hecho un pedido.  ***
+         * invitados/as (numero de tarjeta) que han hecho un pedido.  
+         */
 
 
         // tu código aquí
@@ -228,5 +232,5 @@ public class RicksyBusiness
         System.out.println("Packs: " + expender.stock());
         System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
     }
-    */
+
 }
